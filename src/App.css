@@ -1,0 +1,67 @@
+/* Custom styles for search input */
+.search-input {
+  padding: 11px 14px;  /* Slightly adjusted padding */
+  font-size: 1.1rem;  /* Keeping the size similar, but not identical */
+  border-radius: 45px;  /* More rounded corners */
+  border: 2px solid #00897b;  /* Slightly different green shade */
+  background-color: #f3f3f3;  /* Light gray background */
+  width: 100%;
+  max-width: 390px;  /* Slightly larger max-width */
+  transition: all 0.3s ease-in-out;  /* Different transition timing */
+}
+
+.search-input:focus {
+  border-color: #004d40;  /* A darker green border */
+  box-shadow: 0 0 8px rgba(0, 123, 123, 0.5);  /* Softer box-shadow */
+  background-color: #ffffff;  /* White background on focus */
+  outline: none;
+}
+
+/* Custom styles for create button */
+.create-btn {
+  padding: 12px 22px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  background-color: #00796b;
+  color: white;
+  border: none;
+}
+
+.create-btn:hover {
+  background-color: #004d40;
+  box-shadow: 0 0 12px rgba(0, 123, 123, 0.4);
+}
+
+/* Custom styles for product table */
+.table th, .table td {
+  padding: 13px 16px;
+  text-align: center;
+}
+
+.table {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+  background-color: #c3d285;
+  color: white;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.table tbody tr:hover {
+  background-color: #e0f7fa;
+}
+
+/* Add media query for small screens */
+@media (max-width: 576px) {
+  .search-input {
+    padding: 9px 13px;
+  }
+}
